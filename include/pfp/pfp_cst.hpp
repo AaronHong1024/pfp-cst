@@ -84,9 +84,9 @@ public :
             return ((this->l != b.l) or (this->r != b.r));
         }
 
-        bool operator==(const struct node &b)
+        bool operator==(const struct node &b)const
         {
-            return ((this->l == b.l) or (this->r == b.r));
+            return ((this->l == b.l) && (this->r == b.r));
         }
     } node_t;
 
